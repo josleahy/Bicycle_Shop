@@ -14,10 +14,11 @@ class Bike_Shops(object):
     # 20% profit on bike sales
 
 class Customer(object):
-    def __init__(self, name, budget):
+    def __init__(self, name, money,):
         self.name = ""
-        self.budget = 0
+        self.money = 0
+
 
     def buy_bike(self):
-        #Customer budget becomes budget - cost of the bike
+        #Customer money becomes money - cost of the bike
         #Bike_Shop inventory - 1
