@@ -1,17 +1,14 @@
 class Bicycle(object):
-    def __init__(self, model, weight, cost):
+    def __init__(self, model, weight, cost_produce):
         self.model = ''
         self.weight = 0
-        self.cost = 0
+        self.cost_produce = 0
 
 class Bike_Shops(object):
-    def __init__(self, name, inventory):
+    def __init__(self, name, inventory, markup):
         self.name = "Joe's Bike Shop"
         self.inentory = 0
-
-    def profit_margin(self):
-        margin = Bicycle.cost * .20
-    # 20% profit on bike sales
+        self.markup = Bicycle.cost_produce + (Bicycle.cost_produce * .20)
 
 class Customer(object):
     def __init__(self, name, money,):
