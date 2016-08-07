@@ -1,19 +1,32 @@
 class Bicycle(object):
-    def __init__(self, model, weight, cost_produce):
-        self.model = ''
-        self.weight= 0
-        self.cost_produce = 0
+    def __init__(self, name, weight, cost_produce):
+
+        self.name = name
+        self.weight= weight
+        self.cost_produce = cost_produce
 
 class Bike_Shop(object):
-    def __init__(self):
-        self.name = "Joe's Bike Shop"
-        self.inentory = 0
+    def __init__(self, name, inventory, markup):
+        self.name = name
+        self.inentory = inventory
         self.markup = .20
-    def check_earnings(self):
 
 
 class Customer(object):
-    def __init__(self):
-        self.name = ""
-        self.money = 0
-    def buy_bike(self):
+    def __init__(self, name, money):
+        self.name = name
+        self.money = money
+
+
+shop_inventory =[
+Bicycle("Speedster",20,200),
+Bicycle("Cruiser",25,100),
+Bicycle("Flyer",22,150),
+]
+
+customers = [
+Customer("John",800),
+Customer("Mary",1000),
+Customer("Rob", 500),
+]
+
