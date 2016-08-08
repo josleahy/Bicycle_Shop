@@ -12,11 +12,8 @@ class Bike_Shop(object):
         self.markup = .20
         self.profit = 0
 
-    def profit(cost):
-        markup = .20
-        print(cost * markup)
-
 class Customer(object):
     def __init__(self, name, money):
         self.name = name
         self.money = money
+
