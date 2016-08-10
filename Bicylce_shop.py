@@ -1,4 +1,5 @@
 from Bicycle_shop_model import Bicycle, Bike_Shop, Customer
+
 shop_inventory =[
 Bicycle("Speedster",20,1000),
 Bicycle("Cruiser",25,200),
@@ -10,11 +11,10 @@ Bicycle("Sport", 23, 500)
 shop = Bike_Shop("Joe's Bike Shop", shop_inventory, .20, 0)
 
 customers = [
-Customer("John",800),
+Customer("John",200),
 Customer("Mary",1000),
 Customer("Rob", 500),
 ]
-
 
 print ("Our Current Inventory")
 print ("-" * 20)
@@ -43,5 +43,3 @@ print("-" * 20)
 for bike in range(len(shop_inventory)):
     profit = shop_inventory[bike].cost_produce * .20
     print(shop_inventory[bike].name + ' - $' + str(profit))
-
-

@@ -1,3 +1,4 @@
+
 class Bicycle(object):
     def __init__(self, name, weight, cost_produce):
 
@@ -10,10 +11,9 @@ class Bike_Shop(object):
         self.name = name
         self.inventory = inventory
         self.markup = .20
-        self.profit = 0
+        self.profit = profit
 
 class Customer(object):
     def __init__(self, name, money):
         self.name = name
         self.money = money
-
